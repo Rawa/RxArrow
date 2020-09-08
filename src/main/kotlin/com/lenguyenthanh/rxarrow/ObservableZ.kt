@@ -1,11 +1,11 @@
 package com.lenguyenthanh.rxarrow
 
 import arrow.core.*
-import io.reactivex.Observable
-import io.reactivex.Single
-import io.reactivex.annotations.CheckReturnValue
-import io.reactivex.annotations.SchedulerSupport
-import io.reactivex.functions.BiFunction
+import io.reactivex.rxjava3.annotations.CheckReturnValue
+import io.reactivex.rxjava3.annotations.SchedulerSupport
+import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.functions.BiFunction
 
 typealias ObservableZ<E, A> = Observable<Either<E, A>>
 

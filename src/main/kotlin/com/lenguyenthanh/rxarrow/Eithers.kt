@@ -3,9 +3,9 @@ package com.lenguyenthanh.rxarrow
 import arrow.core.Either
 import arrow.core.left
 import arrow.core.right
-import io.reactivex.Maybe
-import io.reactivex.Observable
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Maybe
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.Single
 
 inline fun <E1, E2, E, T, R> Either<E1, T>.flatMapObservableEither(crossinline mapper: (T) -> ObservableZ<E2, R>): ObservableZ<E, R>
         where E1 : E, E2 : E {

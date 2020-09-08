@@ -4,10 +4,10 @@ import arrow.core.Either
 import arrow.core.identity
 import arrow.core.left
 import arrow.core.right
-import io.reactivex.Observable
-import io.reactivex.Single
-import io.reactivex.annotations.CheckReturnValue
-import io.reactivex.annotations.SchedulerSupport
+import io.reactivex.rxjava3.annotations.CheckReturnValue
+import io.reactivex.rxjava3.annotations.SchedulerSupport
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.Single
 
 typealias SingleZ<E, A> = Single<Either<E, A>>
 

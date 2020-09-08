@@ -3,8 +3,8 @@ package com.lenguyenthanh.rxarrow
 import arrow.core.Either
 import arrow.core.left
 import arrow.core.right
-import io.reactivex.Observable
-import io.reactivex.observers.TestObserver
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.observers.TestObserver
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 

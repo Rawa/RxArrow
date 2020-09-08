@@ -5,10 +5,10 @@ import arrow.core.left
 import arrow.core.right
 import com.lenguyenthanh.rxarrow.*
 import com.lenguyenthanh.rxarrow.examples.util.disposedBy
-import io.reactivex.Observable
-import io.reactivex.Single
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.disposables.Disposable
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.disposables.CompositeDisposable
+import io.reactivex.rxjava3.disposables.Disposable
 
 
 fun main(args: Array<String>) {

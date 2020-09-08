@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 object Versions {
     const val arrow = "0.10.5"
-    const val kotlin = "1.3.41"
-    const val rxJava = "2.2.10"
+    const val kotlin = "1.4.0"
+    const val rxJava = "3.0.6"
 
     const val spek = "2.0.6"
     const val strikt = "0.22.2"
@@ -18,7 +18,7 @@ buildscript {
 
 plugins {
     id("java-library")
-    kotlin("jvm") version "1.3.41"
+    kotlin("jvm") version "1.4.0"
     id("maven")
 }
 
@@ -53,7 +53,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-syntax:${Versions.arrow}")
 
     // RxJava
-    implementation("io.reactivex.rxjava2:rxjava:${Versions.rxJava}")
+    implementation("io.reactivex.rxjava3:rxjava:${Versions.rxJava}")
 
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:${Versions.spek}")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:${Versions.spek}")
